@@ -16,11 +16,11 @@
  Required Rails version - 2.3.5
  Required Rack version - 1.0.1
 
-*Install Rails
-*gem install rails -v=2.3.11
+ * Install Rails
+ * gem install rails -v=2.3.11
 
-*Install Rack:
-*gem install rack -v=1.1.0
+ * Install Rack:
+ * gem install rack -v=1.1.0
 
 = Дополнения
 
