@@ -1,4 +1,4 @@
-= Greenmine плагин для Redmine
+= Greenmine плагин для Redmine(v. 1.1.1.)
 
 Проектное управление.
 
@@ -8,6 +8,19 @@
  * добавлено поле "Ответственный" для задачи;
  * добавлены дополнительные поля на списке вложенных задач (время оценённое, затраченное, дата выполнения);
  * добавлен title на заголовок задачи, если это название отображется не полностью;
+
+= Требования
+
+ Redmine version -  1.1.1
+ Supported Ruby versions -  ruby 1.8.6, 1.8.7
+ Required Rails version - 2.3.5
+ Required Rack version - 1.0.1
+
+Install Rails
+gem install rails -v=2.3.11
+
+Install Rack:
+gem install rack -v=1.1.0
 
 = Дополнения
 
