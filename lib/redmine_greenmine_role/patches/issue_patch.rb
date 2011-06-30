@@ -1,4 +1,4 @@
-module RedmineGreenmine
+module RedmineGreenmineRole
   module Patches
     module IssuePatch
       def self.included(base)

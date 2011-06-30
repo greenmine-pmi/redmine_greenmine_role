@@ -17,7 +17,7 @@ Dispatcher.to_prepare :redmine_greenmine_role do
 
   require_dependency 'issue'
   Issue.safe_attributes "gm_responsible_id"
-  Issue.send(:include, RedmineGreenmine::Patches::IssuePatch)
+  Issue.send(:include, RedmineGreenmineRole::Patches::IssuePatch)
 end
 
 
