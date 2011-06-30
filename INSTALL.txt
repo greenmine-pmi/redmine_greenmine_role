@@ -3,7 +3,6 @@ cd redmine
 git checkout 1.1.1
 cd vendor/plugins
 git clone git@github.com:greenmine-pmi/redmine_greenmine_role.git
-git clone git@github.com:greenmine-pmi/redmine_greenmine_report.git
 rm -rf rfpdf/
 git clone git://github.com/edwinmoss/rfpdf.git
 cd ../..
