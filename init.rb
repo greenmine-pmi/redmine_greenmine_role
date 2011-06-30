@@ -3,13 +3,13 @@ require 'redmine'
 require 'issues_helper_patch'
 require 'application_helper_patch'
 
-Redmine::Plugin.register :redmine_greenmine do
-  name 'Redmine Greenmine plugin'
-  author 'Ilya Nemihin'
+Redmine::Plugin.register :redmine_greenmine_role do
+  name 'Redmine Greenmine role plugin'
+  author 'Greenmine-PMI'
   description 'This is a plugin for Redmine'
-  version '0.0.4'
-  url 'https://github.com/nemilya/redmine_greenmine'
-  author_url ''
+  version '0.0.1'
+  url 'https://github.com/greenmine-pmi/redmine_greenmine_role'
+  author_url 'http://greenmine-pmi.blogspot.com/'
 end
 
 require 'dispatcher'
@@ -21,6 +21,6 @@ Dispatcher.to_prepare :redmine_greenmine do
 end
 
 
-require 'redmine_greenmine/hooks/view_issues_show_details_bottom_hook'
-require 'redmine_greenmine/hooks/view_issues_form_details_bottom_hook'
+require 'redmine_greenmine_role/hooks/view_issues_show_details_bottom_hook'
+require 'redmine_greenmine_role/hooks/view_issues_form_details_bottom_hook'
 
