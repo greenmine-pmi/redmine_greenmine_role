@@ -3,10 +3,6 @@ cd redmine
 git checkout 1.1.1
 cd vendor/plugins
 git clone git@github.com:greenmine-pmi/redmine_greenmine_role.git
-rm -rf rfpdf/
-git clone git://github.com/edwinmoss/rfpdf.git
-cd ../..
-
 
 Create  "config/database.yml"
 
@@ -38,15 +34,12 @@ production:
 #-------------------------------
 
 
-
 rake db:create:all
 rake db:migrate
 rake db:migrate:plugins
 
 rake generate_session_store
+rake redmine:load_default_data
 
 RAILS_ENV=production rake db:migrate
 RAILS_ENV=production rake redmine:load_default_data
-
-RAILS_ENV=development rake db:migrate
-RAILS_ENV=development rake redmine:load_default_data
