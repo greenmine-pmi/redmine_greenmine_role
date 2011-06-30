@@ -13,7 +13,7 @@ Redmine::Plugin.register :redmine_greenmine_role do
 end
 
 require 'dispatcher'
-Dispatcher.to_prepare :redmine_greenmine do
+Dispatcher.to_prepare :redmine_greenmine_role do
 
   require_dependency 'issue'
   Issue.safe_attributes "gm_responsible_id"
