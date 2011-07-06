@@ -2,7 +2,7 @@ require 'redmine'
 
 require 'issues_helper_patch'
 require 'application_helper_patch'
-require 'redmine_export_pdf_patch' # overwrite base class
+#require 'redmine_export_pdf_patch' # overwrite base class
 
 
 Redmine::Plugin.register :redmine_greenmine_role do
